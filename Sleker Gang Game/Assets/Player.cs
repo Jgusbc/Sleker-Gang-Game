@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     Rigidbody2D myRigidbody2D;
     Animator myAnimator;
 
-    //State
+    Vector2 movement;
     
     // Start is called before the first frame update
     void Start()
@@ -19,11 +19,20 @@ public class Player : MonoBehaviour
         myAnimator = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+        myAnimator.SetFloat("Horizontal", movement.x);
+        myAnimator.SetFloat("Vertical", movement.y);
+        myAnimator.SetFloat("Speed", movement.sqrMagnitude);
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
-        Move();
-
+        //Move();
+        myRigidbody2D.MovePosition(myRigidbody2D.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
     private void Move()
