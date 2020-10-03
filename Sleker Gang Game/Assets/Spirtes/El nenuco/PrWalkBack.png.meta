@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 3772aec4ab19fe943b9d14c4a8d83818
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -24655300281714677
+    second: PrWalkBack_0
+  - first:
+      213: 8862276021351524123
+    second: PrWalkBack_1
+  - first:
+      213: -2047287451005062592
+    second: PrWalkBack_2
+  - first:
+      213: -7957152916716605256
+    second: PrWalkBack_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +109,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PrWalkBack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 150
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08b0e0922868aff0800000000000000
+      internalID: -24655300281714677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrWalkBack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 457
+        width: 150
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17ae1a46112dfa70800000000000000
+      internalID: 8862276021351524123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrWalkBack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 150
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0427ab909e29693e0800000000000000
+      internalID: -2047287451005062592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrWalkBack_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 150
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0b4afb493829190800000000000000
+      internalID: -7957152916716605256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
