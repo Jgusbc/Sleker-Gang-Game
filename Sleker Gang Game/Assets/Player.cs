@@ -31,46 +31,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Move();
+     
         myRigidbody2D.MovePosition(myRigidbody2D.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
-
-    private void Move()
-    {
-        float deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        var newXPos = transform.position.x + deltaX;
-        float deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        var newYPos = transform.position.y + deltaY;
-        transform.position = new Vector2(newXPos, newYPos).normalized;
-        SetAnimation(deltaX, deltaY);
-
-    }
-
-    private void SetAnimation(float deltaX, float deltaY)
-    {
-        if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && deltaX > 0)
-        {
-            myAnimator.SetBool("RightWalk", true);
-        }
-        else if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && deltaX < 0)
-        {
-            myAnimator.SetBool("LeftWalk", true);
-        }
-        else if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && deltaY < 0)
-        {
-            myAnimator.SetBool("FrontWalk", true);
-        }
-        else if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && deltaY > 0)
-        {
-            myAnimator.SetBool("BackWalk", true);
-        }
-        else
-        {
-            myAnimator.SetBool("RightWalk", false);
-            myAnimator.SetBool("LeftWalk", false);
-            myAnimator.SetBool("FrontWalk", false);
-            myAnimator.SetBool("BackWalk", false);
-        }
-    }
 }
+
+   
+
 
