@@ -194,46 +194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097642, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.30405
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097642, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.30405
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097642, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.30405
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097645, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097647, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097647, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097647, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102371243967097647, guid: 6746a3dabeeac1946a05c2c076688af3,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6746a3dabeeac1946a05c2c076688af3, type: 3}
 --- !u!1 &983962821
