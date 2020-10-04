@@ -21,6 +21,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Bosque4.unity
     guid: b13cd825ad6593f4fa459adaa3258709
   - enabled: 1
+    path: Assets/Scenes/Bosque5.unity
+    guid: ad024503e8e31d84187ff4022ec9441b
+  - enabled: 1
     path: Assets/Scenes/Bosque6.unity
     guid: b477cb8d43e04294aac6b647b7eafee6
+  - enabled: 1
+    path: Assets/Scenes/Bosque7.unity
+    guid: dd7f93a416205a34f96e0a48752d5e83
+  - enabled: 1
+    path: Assets/Scenes/Bosque8.unity
+    guid: 9fc5f44bed4c0734bbd60310d8593beb
+  - enabled: 1
+    path: Assets/Scenes/Bosque9.unity
+    guid: 7dd581a79132aa447abf6a4cdb0e3cf3
   m_configObjects: {}

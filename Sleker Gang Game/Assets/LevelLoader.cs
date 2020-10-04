@@ -19,16 +19,5 @@ public class LevelLoader : MonoBehaviour
     {
 
     }
-    int OnCollisionEnter2D(Collision2D colission) {
-        switch (colission.gameObject.tag)
-        {
-            case "Finish":
 
-                break;
-            default:
-                break;
-        }
-                return imageNumber;
-
-    }
 }
