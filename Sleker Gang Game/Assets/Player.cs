@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    //Game config inside Unity UI
-    [SerializeField] float moveSpeed = 10f;
 
+    [SerializeField] float moveSpeed = 10f;
+ 
     Rigidbody2D myRigidbody2D;
     Animator myAnimator;
-
     Vector2 movement;
-    
-    // Start is called before the first frame update
     void Start()
     {
         myRigidbody2D = GetComponent<Rigidbody2D>();
@@ -33,6 +31,24 @@ public class Player : MonoBehaviour
     {
      
         myRigidbody2D.MovePosition(myRigidbody2D.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+
+            case "Finish":
+                int level = collision.gameObject.GetComponent<LevelLoader>().imageNumber;
+                LoadNextLevel(level);
+                break;
+            default:
+                break;
+        }
+
+    }
+    void LoadNextLevel(int level)
+    {
+        SceneManager.LoadScene(level);
     }
 }
 

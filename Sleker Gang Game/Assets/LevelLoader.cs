@@ -6,20 +6,29 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    public Animator transition;
-    public float transitionTime = 1f;
+
+    [SerializeField] public int imageNumber;
+
     // Update is called once per frame
+
+    private void Start()
+    {
+
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C)) {
-            {
-                LoadNextLevel();
-            }
-        }
 
-         void LoadNextLevel()
+    }
+    int OnCollisionEnter2D(Collision2D colission) {
+        switch (colission.gameObject.tag)
         {
-            SceneManager.LoadScene(1);
+            case "Finish":
+
+                break;
+            default:
+                break;
         }
+                return imageNumber;
+
     }
 }
